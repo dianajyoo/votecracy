@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <%- include('../partials/head.ejs'); %>
+
+  <body>
+    <main id="root" class="disable-scrollbars dark-bg">
+      <article class="party flex-col">
+        <header class="title">
+          <h2 id="cast-vote">Cast Your Vote</h2>
+        </header>
+
+        <section id="party-select" class="section pick-one">
+          <div class="question flex-col">
+            <header class="title">
+              <h3>Which political party?</h3>
+            </header>
+            <button type="button" id="democratic" class="option vote">
+              Democratic
+            </button>
+            <button type="button" id="republican" class="option vote">
+              Republican
+            </button>
+          </div>
+        </section>
+
+        <section id="for-vote" class="section address">
+          <%- include('../partials/search'); %>
+        </section>
+
+        <section class="section result">
+          <h3 id="i-vote-for" class="subheading">I vote for...</h3>
+          <ul id="candidates"></ul>
+        </section>
+
+        <section id="complete-vote" class="complete"></section>
+      </article>
+    </main>
+  </body>
+</html>

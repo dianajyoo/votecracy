@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es6", "dom"],
+    "outDir": "dist",
+    "rootDir": "src",
+    // "rootDirs": ["src", "public"],
+    "moduleResolution": "node",
+    "allowJs": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
+    "baseUrl": "./",
+    "paths": {
+      "*": ["src/types"]
+    }
+  },
+  "files": ["src/types/custom.d.ts"],
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist", "src/frontend/index.ts"]
+}

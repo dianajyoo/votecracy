@@ -1,0 +1,123 @@
+article.party {
+  h2#cast-vote {
+    display: none;
+  }
+
+  section.pick-one {
+    height: 100%;
+    display: block;
+
+    div.question {
+      height: 100%;
+      justify-content: center;
+
+      header.title h3 {
+        margin-bottom: $margin-size-20;
+      }
+
+      button.option {
+        width: 100%;
+        margin-bottom: $margin-size-15;
+        font-size: 1em;
+        font-weight: 600;
+      }
+    }
+  }
+
+  section#for-vote {
+    display: none;
+  }
+
+  section.result {
+    margin: $margin-size-20 0;
+
+    h3.subheading {
+      margin: $margin-size-20 0;
+      display: none;
+    }
+
+    ul#candidates {
+      li.result {
+        padding: 0;
+
+        button.choice {
+          width: 100%;
+          font-size: 1em;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  section.complete {
+    display: none;
+
+    div.complete-wrapper {
+      margin: 50% 0;
+    }
+
+    div#circle {
+      width: $loader-size;
+      height: $loader-size;
+      margin: 0 auto;
+      position: relative;
+      border: 0.5em solid $success-color;
+      border-radius: 50%;
+    }
+
+    div.checkmark {
+      display: none;
+
+      &.draw:after {
+        animation-duration: 0.8s;
+        animation-timing-function: ease;
+        animation-name: checkmark;
+        transform: scaleX(-1) rotate(135deg);
+      }
+
+      &:after {
+        width: $check-width;
+        height: $check-height;
+        position: absolute;
+        left: 0.5em;
+        top: 4em;
+        border-right: 0.5em solid $success-color;
+        border-top: 0.5em solid $success-color;
+        transform-origin: center top;
+        content: '';
+        opacity: 1;
+      }
+    }
+
+    p.name {
+      margin: $margin-size-25 0;
+      text-align: center;
+      color: $accent-color;
+      font-weight: 600;
+    }
+  }
+}
+
+// Source: https://codepen.io/scottloway/pen/zqoLyQ
+@keyframes checkmark {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    height: 0;
+    width: $check-width;
+    opacity: 1;
+  }
+  40% {
+    height: $check-height;
+    width: $check-width;
+    opacity: 1;
+  }
+  100% {
+    height: $check-height;
+    width: $check-width;
+    opacity: 1;
+  }
+}

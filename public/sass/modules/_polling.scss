@@ -1,0 +1,46 @@
+article.polling {
+  justify-content: flex-start;
+
+  div.round.abs {
+    height: 55%;
+    background: $primary-color;
+
+    header.title h1 {
+      text-align: center;
+      font-size: 30px;
+    }
+  }
+
+  section.map {
+    div#map {
+      min-height: 50%;
+      height: auto;
+      padding: $padding-size-15;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  section.result {
+    div.result h1 {
+      font-size: 25px;
+    }
+
+    ul#poll-locations {
+      li.result h4 {
+        margin: $margin-size-5 0 0 0;
+      }
+
+      div.poll-info {
+        margin-bottom: $margin-size-15
+      }
+
+      a.get-directions button {
+        background: $tertiary-color;
+        color: $accent-color;
+      }
+    }
+  }
+}

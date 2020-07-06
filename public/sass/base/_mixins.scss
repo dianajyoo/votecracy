@@ -1,0 +1,31 @@
+@mixin flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin flex-direction($direction) {
+  -webkit-flex-direction: $direction;
+  -moz-flex-direction: $direction;
+  -ms-flex-direction: $direction;
+  flex-direction: $direction;
+}
+
+@mixin skewY($deg) {
+  -webkit-transform: skewY($deg);
+  transform: skewY($deg);
+}
+
+@mixin box-shadow(
+  $horiz: 0px,
+  $vert: 0px,
+  $blur: 0px,
+  $spread: 0px,
+  $color: light-grey
+) {
+  -webkit-box-shadow: $horiz $vert $blur $spread $color;
+  -moz-box-shadow: $horiz $vert $blur $spread $color;
+  box-shadow: $horiz $vert $blur $spread $color;
+  @content;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <%- include('../partials/head.ejs'); %>
+
+  <body>
+    <main id="root" class="disable-scrollbars dark-bg">
+      <article class="elections flex-col">
+        <header class="title">
+          <h2>
+            Search Upcoming Elections
+          </h2>
+        </header>
+
+        <section class="section address for-elections">
+          <%- include('../partials/search'); %>
+        </section>
+
+        <section class="section result">
+          <ul id="upcoming-elections"></ul>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <%- include('./partials/head.ejs'); %>
+
+  <body>
+    <main id="root" class="disable-scrollbars lite-bg">
+      <div class="landing width-100 flex-col">
+        <div class="doodle-wrapper dark-bg">
+          <img class="doodle abs" src="/images/doodle.svg" />
+        </div>
+
+        <section class="section to-do">
+          <div class="flex-col round abs">
+            <h3>What would you like to do?</h3>
+            <div class="flex-row flex-1 wrap space-btwn pad-top-5">
+              <a
+                rel="noopener"
+                class="action flex-basis"
+                href="/my-polling-location"
+                ><button type="button">
+                  Find my polling location
+                </button></a
+              >
+              <a rel="noopener" class="action flex-basis" href="/elections"
+                ><button type="button">
+                  Search upcoming elections
+                </button></a
+              >
+              <a
+                rel="noopener"
+                class="action flex-basis"
+                href="/representatives"
+                ><button type="button">
+                  Search representatives
+                </button></a
+              >
+              <a rel="noopener" class="action flex-basis" href="/vote"
+                ><button type="button">
+                  Vote
+                </button></a
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

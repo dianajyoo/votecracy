@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <%- include('../partials/head.ejs'); %>
+
+  <body>
+    <main id="root" class="disable-scrollbars dark-bg">
+      <article class="reps">
+        <header class="title">
+          <h2>Search Representatives</h2>
+        </header>
+
+        <section class="section address for-officials">
+          <%- include('../partials/search'); %>
+        </section>
+
+        <section class="section result">
+          <ul id="officials"></ul>
+        </section>
+      </article>
+    </main>
+    <!-- <script>
+      var exports = {};
+    </script>
+    <script src="/js/main.bundle.js"></script> -->
+  </body>
+</html>

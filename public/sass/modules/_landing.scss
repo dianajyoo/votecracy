@@ -1,0 +1,46 @@
+div.landing {
+  justify-content: flex-start;
+  align-items: center;
+
+  div.doodle-wrapper {
+    width: 100%;
+    min-height: 350px;
+    position: absolute;
+    top: 0;
+
+    img.doodle {
+      width: 100%;
+      bottom: 0;
+      right: 3%;
+    }
+  }
+
+  section.to-do {
+    height: 100%;
+    margin: 0;
+
+    div.round.abs {
+      background: $light-bg-color;
+
+      h3 {
+        color: $primary-color;
+      }
+    }
+
+    a.action {
+      min-height: 125px;
+      padding: 3%;
+
+      button {
+        width: 100%;
+        height: 100%;
+        background: $light-bg-color;
+        color: $primary-color;
+        font-size: 1em;
+        font-weight: 600;
+        border-radius: 1em;
+        box-shadow: 0 0 4px 1px $shadow-color;
+      }
+    }
+  }
+}

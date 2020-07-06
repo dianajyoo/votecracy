@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <%- include('../partials/head.ejs'); %>
+
+  <body>
+    <main id="root" class="disable-scrollbars dark-bg">
+      <article class="polling flex-col">
+        <section class="section map">
+          <div id="map"></div>
+        </section>
+
+        <div class="round abs">
+          <header class="title">
+            <h2>
+              Find My Polling Location
+            </h2>
+          </header>
+
+          <section class="section address for-poll">
+            <%- include('../partials/search'); %>
+          </section>
+
+          <section class="section result">
+            <div class="result">
+              <h3>Election Voting Sites</h3>
+              <span id="empty-state"
+                ><i class="fas fa-map-marker-alt"></i>Enter address to view
+                polling locations here.</span
+              >
+              <ul id="poll-locations"></ul>
+            </div>
+          </section>
+        </div>
+      </article>
+    </main>
+    <script src="/js/map.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1IkwIEPoS8dQORMDD58VB91xpJhPub08&callback=initMap"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+article.reps {
+  section.address label {
+    color: $accent-color;
+  }
+
+  section.result {
+    ul#officials {
+      div.info {
+        margin-left: $margin-size-20;
+        flex: 1;
+
+        p {
+          color: $accent-color;
+        }
+
+        h4.name {
+          margin: 0;
+        }
+
+        div.contact {
+          margin-top: $margin-size-10;
+        }
+      }
+
+      div.photo {
+        width: 110px;
+        min-height: 100px;
+        height: auto;
+      }
+    }
+  }
+}
