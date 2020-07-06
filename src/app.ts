@@ -8,7 +8,7 @@ import index from './routes/index';
 import { getOfficials, getVoterInfo, getGeocode } from './api/api';
 
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 export class HTTPError extends Error {
   status?: number;
