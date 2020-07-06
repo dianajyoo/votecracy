@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <% include ../partials/head.ejs %>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link href="/css/main.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+      rel="stylesheet"
+    />
+    <title>Votecracy</title>
+  </head>
 
   <body>
     <main id="root" class="disable-scrollbars dark-bg">
@@ -10,7 +23,10 @@
         </header>
 
         <section class="section address for-officials">
-          <% include ../partials/search %>
+          <form id="address-form">
+            <label>Enter Your Address</label>
+            <input type="text" id="address" name="address" value="" />
+          </form>
         </section>
 
         <section class="section result">
