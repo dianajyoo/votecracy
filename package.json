@@ -2,7 +2,7 @@
   "name": "votecracy",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/bundle.js",
+  "main": "dist/main.bundle.js",
   "scripts": {
     "clean": "rimraf ./dist",
     "server": "npx tsc",
@@ -11,7 +11,7 @@
     "build": "npm run server && npm run client",
     "sass": "npx sass --watch public/sass/main.scss:public/css/main.css",
     "start:dev": "nodemon --require dotenv/config",
-    "start:prod": "npm run build && node dist/main.bundle.js",
+    "start": "npm run build && node dist/main.bundle.js",
     "lint": "eslint . --ext .ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
