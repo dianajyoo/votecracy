@@ -24,7 +24,7 @@ export default class Representative {
 
   getPhoto = () => {
     if (!this.photo) {
-      return '/images/placeholder.svg';
+      return 'public/images/placeholder.svg';
     }
 
     return this.photo;

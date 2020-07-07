@@ -21,9 +21,14 @@ app.use(cookieParser());
 // View engine setup
 app.set('views', path.join(__dirname, '../', 'views'));
 app.set('view engine', 'ejs');
+app.engine('ejs', require('ejs').__express);
 
 // Set path for static assets
-app.use(express.static(path.join(__dirname, '../', 'public')));
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../', 'dist')));
+} else {
+  app.use(express.static(path.join(__dirname, '../', 'public')));
+}
 
 // Routes
 app.use('/', index);
