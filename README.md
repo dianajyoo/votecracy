@@ -2,6 +2,10 @@
 
 Votecracy is a mobile first web application that uses a registered address to locate election voting sites, search government officials and upcoming elections, and cast votes. Voting apps can offer solutions to accessiblity, voter turnout, social distancing due to COVID-19, etc.
 
+View it [here](https://votecracy.herokuapp.com).
+
+### Screenshots
+
 <img src="/public/images/landing.png" width="350" />
 <img src="/public/images/search.png" width="350" />
 <img src="/public/images/poll.png" width="350" />
